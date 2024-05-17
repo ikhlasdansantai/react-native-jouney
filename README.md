@@ -1,4 +1,4 @@
-# Expo starter with Navigation (Typescript) Template
+# React Native GANG 🥶 
 ![image](https://github.com/ikhlasdansantai/expo-typescript-nativewind-template/assets/95151018/c567bfee-2126-461a-ba76-9a12edbba1cb)
 
 including

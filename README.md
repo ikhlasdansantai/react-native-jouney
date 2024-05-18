@@ -12,3 +12,29 @@ Yang dipelajari disini adalah
 
 
 
+## Day 2 (Spash Screen)
+https://github.com/ikhlasdansantai/react-native-jouney/assets/95151018/8bfd6eb6-84c2-4be1-8adb-c10ffa55eb34
+1. buat animasi disini, kudu mesti pake lib nya `react-native-animated`
+2. ada banyak pilihan untuk comp `Animated`, mulai dari `Animated.View, Animated.Text, Animated.Image, dll`, dan kita bisa kasih animasinya dengan prop `entering` & `exiting`
+3. klo mau trigger animasinya, misal disini, karena bikin tabs, yang dimana animasinya ke trigger klo comp nya di render-ulang, kita bisa kasih `key prop`
+4. kalo mau atur berapa lama durasi + delay, bisa langsung diconfig di inline-comp nya, `FadeIn.duration(600)` / `FadeOut.duration(600)`
+5. ternyata bikin fitur swipe itu, tidak sesimple itu
+6. ada banyak method untuk capture gesture, bisa diatur di method Fling() nya, bisa atur di param method `.direction(Directions.RIGHT | Directions.LEFT, dll)`
+7. cara yang dipake sebelumnya yaitu
+   ```tsx
+   const handleForward = () => (tab === tabDatas.length - 1 ? handleSkip() : setTab(tab + 1));
+   
+   const swipeRight = Gesture.Fling()
+    .direction(Directions.RIGHT)
+    .onEnd((e) => {
+      // handleForward()
+    });
+   ```
+   Mengakibatkan force close, ketika di swipe, akhirnya solusi ini tersolve disini
+   [Solusinya hehe]https://stackoverflow.com/questions/73893490/gesturedetector-gesture-handler-app-crash-when-calling-external-function
+   ```tsx
+   const swipeRight = Gesture.Fling()
+    .direction(Directions.RIGHT)
+    .onEnd(() => runOnJS(handleBackward)());
+   ```
+8. 

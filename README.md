@@ -37,4 +37,3 @@ https://github.com/ikhlasdansantai/react-native-jouney/assets/95151018/8bfd6eb6-
     .direction(Directions.RIGHT)
     .onEnd(() => runOnJS(handleBackward)());
    ```
-8. 

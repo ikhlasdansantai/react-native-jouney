@@ -38,4 +38,4 @@ https://github.com/ikhlasdansantai/react-native-jouney/assets/95151018/8bfd6eb6-
     .onEnd(() => runOnJS(handleBackward)());
    ```
 
-   <!-- PropsWithChildren, adalah types untuk passing children  -->
+   <!-- PropsWithChildren, adalah types untuk passing children...  -->

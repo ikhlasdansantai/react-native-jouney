@@ -38,4 +38,27 @@ https://github.com/ikhlasdansantai/react-native-jouney/assets/95151018/8bfd6eb6-
     .onEnd(() => runOnJS(handleBackward)());
    ```
 
+# Day 3 (Markdown Editor)
+https://github.com/ikhlasdansantai/react-native-jouney/assets/95151018/af7dd5b7-b413-4e78-9a4d-ed34b01133a9
+1. fitur markdown nya menggunakan lib `react-native-markdown-display`.
+2. kita bisa buat custom style, buat markdown nya
+```tsx
+// create a custom style for markdown
+const markdownStyles = StyleSheet.create({
+  heading1: {
+    fontFamily: "Manrope-Bold",
+    lineHeight: 40,
+  },
+  paragraph: {
+    lineHeight: 22,
+  },
+});
+```
+3. cara apply nya cukup masukin aja ke prop Markdown nya
+```tsx
+<Markdown style={markdownStyles}>{content}</Markdown>
+```
+
+
+
    <!-- PropsWithChildren, adalah types untuk passing children...  -->

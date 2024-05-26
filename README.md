@@ -61,4 +61,4 @@ const markdownStyles = StyleSheet.create({
 4. kita bisa buat form textinput nya autofocus dengan cara tambahin `autoFocus={true}` di props `<TextInput />` nya, mudah bukan 😁
 
 
-   <!-- PropsWithChildren, adalah types untuk passing children...  -->
+<!-- PropsWithChildren, adalah types untuk passing children...  -->
